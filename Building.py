@@ -7,8 +7,9 @@ class Building:
     def __init__(self, min_floor, max_floor, elevs):
         self.min_floor = min_floor
         self.max_floor = max_floor
-        for i in elevs:
-            i = Elevator
+        building = Building(min_floor, max_floor, elevs)
+        for i in building.elevs:
+            i = Elevator(building)
 
     def get_elev(self, index) -> Elevator:
         return self.elevs[index]
