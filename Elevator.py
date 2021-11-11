@@ -10,6 +10,10 @@ class Elevator:
         self.building = building
         self.state = self.Level
         self.pos = 0
+        self.open_time = 0
+        self.close_time = 0
+        self.start_time = 0
+        self.stop_time = 0
 
     def get_state(self):
         if self.UP:
@@ -26,7 +30,21 @@ class Elevator:
         return self.pos
 
     def get_time_for_open(self):
-        return
+        return self.open_time
 
     def get_time_for_close(self):
-        pass
+        return self.close_time
+
+    def get_start_time(self):
+        return self.state
+
+    def get_stop_time(self):
+        return self.stop_time
+
+    def get_max_floor(self):
+        return self.building.max_floor
+
+    def get_min_floor(self):
+        return self.building.min_floor
+
+
