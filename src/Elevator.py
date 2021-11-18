@@ -1,10 +1,4 @@
-
-
 class Elevator:
-
-    # UP = 1
-    # DOWN = -1
-    # LEVEL = 0
 
     def __init__(self, elevator, index_of_elevator):
         self.index_of_elevator = index_of_elevator
@@ -16,6 +10,4 @@ class Elevator:
         self.open_time = elevator[index_of_elevator]["_openTime"]
         self.start_time = elevator[index_of_elevator]["_startTime"]
         self.stop_time = elevator[index_of_elevator]["_stopTime"]
-        self.pos = 0
         self.time = 0
-        self.state = 0 #level

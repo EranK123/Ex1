@@ -1,8 +1,3 @@
-import csv
-
-from pip._internal.cli.cmdoptions import src
-
-
 class CallsForElevator:
 
     def __init__(self, name, time, src, dest, type, allocated_to):
@@ -15,4 +10,3 @@ class CallsForElevator:
 
     def __str__(self):
         return f"time: {self.time} src: {self.src} dest: {self.dest} type: {self.type} allocated_to: {self.allocated_to}"
-

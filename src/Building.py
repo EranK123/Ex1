@@ -10,6 +10,10 @@ class Building:
         self.max_floor = 0
         self.num_of_elevators = 0
 
+    # def get_elev(self, index):
+    #     elevator = Elevator(index)
+    #     return elevator
+
     def load_json(self, file_name):
         # build = {}
         try:
@@ -19,7 +23,6 @@ class Building:
                 self.max_floor = build["_maxFloor"]
                 self.num_of_elevators = len(build["_elevators"])
                 self.elevators = build["_elevators"]
-                # elevators_list = build["_elevators"]
 
         except IOError as e:
             print(e)

@@ -1,0 +1,12 @@
+@startuml
+
+class OfflineAlgo{
+   +dist()
+   +allocate()
+   +reader_csv()
+}
+
+
+
+
+@enduml

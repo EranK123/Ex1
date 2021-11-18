@@ -1,15 +1,15 @@
 import pandas as pd
 
 from CallsForElevator import CallsForElevator
-from Ex1.src.Building import Building
-from Ex1.src.Offline_Algo import allocate
+from Building import Building
+from OfflineAlgo import allocate
 # from offline import allocate
 
 if __name__ == '__main__':
     # b1 = Building()
     # b2 = Building()
     # b1.load_json('B2.json')
-    # b2.load_json('B2.json')
+    # b2.load_json('B3.json')
     # e1 = Elevator(b2.elevators, 1)
     # print(b2.num_of_elevators)
     # print(b1.elevators)
@@ -21,7 +21,7 @@ if __name__ == '__main__':
     # call = CallsForElevator(2)
     # call.reader_csv("Calls_a.csv")
     # print(call)
-    allocate("Calls_b.csv", "B5.json")
+    allocate("Calls_c.csv", "B4.json")
 
 
     # print(call)

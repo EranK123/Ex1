@@ -4,7 +4,7 @@ public class Ex1_tester {
     public static void main(String[] args) {
         if(args==null || args.length<4) {
             args = new String[4];
-            args[0] = "123456789";
+            args[0] = "212727283";
             args[1] = "data/B2.json";
             args[2] = "data/Calls_a.csv";
             long time = System.currentTimeMillis();
