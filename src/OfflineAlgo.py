@@ -1,8 +1,6 @@
 import csv
 import sys
 
-from numpy import double
-from decimal import Decimal
 from Elevator import Elevator
 from Building import Building
 from CallsForElevator import CallsForElevator
@@ -43,7 +41,7 @@ This function allocates the best elevator for the current floor based on it's ti
 """
 
 
-def allocate(call_file, building_file):
+def allocate(call_file, building_file, out_file):
     list_of_calls_elevators = []  # each elevator will have the calls allocated to the elevator
     list_of_elevator = []  # list represents the elevators
     list_of_calls_allocated_to = []  # list of the calls we are allocating
@@ -82,7 +80,7 @@ def allocate(call_file, building_file):
     for item in list_of_calls_allocated_to:
         new_list_of_calls_allocated_to.append(item.__dict__.values())  # getting call values
 
-    with open('out.csv', 'w', newline='') as myfile:  # create out.csv
+    with open(out_file, 'w', newline='') as myfile:  # create out
         wr = csv.writer(myfile)
         wr.writerows(new_list_of_calls_allocated_to)
 
@@ -94,10 +92,10 @@ This function reads the csv file for a call.
 
 def reader_csv(file_name):
     try:
+        list_of_calls = []
         with open(file_name, "r") as f:
             call_file = csv.reader(f)
             call = list(call_file)
-            list_of_calls = []
             for item in call:
                 list_of_calls.insert(len(list_of_calls),
                                      CallsForElevator(item[0], item[1], item[2], item[3], item[4], item[5]))
