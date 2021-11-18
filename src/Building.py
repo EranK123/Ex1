@@ -10,10 +10,6 @@ class Building:
         self.max_floor = 0
         self.num_of_elevators = 0
 
-    # def get_elev(self, index):
-    #     elevator = Elevator(index)
-    #     return elevator
-
     def load_json(self, file_name):
         # build = {}
         try:
