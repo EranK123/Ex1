@@ -1,5 +1,5 @@
 # Ex1
-Chapter 1 - ID’s: 212727283, 315907113
+Chapter 1 - Names: Eran Katz and Itzik Ben Shoshan
 In this problem we have a building, elevators and a call. Our call is destined to a certain floor. Our problem is to allocate the fastest elevator. This elevator will reach the caller in the least amount of time and will take him to the provided destination using a provided cmd algorithm. 
       
   For this problem we searched the web and found useful sources to 
